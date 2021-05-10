@@ -21,7 +21,7 @@ func Hello(name string) (string, error) {
 
 // init sets the inital values for variables used int he function.
 func init() {
-	rand.seed(time.Now().UnixNano())
+	rand.Seed(time.Now().UnixNano())
 }
 
 // randomFormat returns one of a set of greeting messages. The returned
